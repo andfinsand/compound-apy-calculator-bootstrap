@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yearly APY Compound Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class = "container mt-5">
+        <div class = "row justify-content-center text-center pt-5">
+            <div class = "highlight_box"> <!-- box for linear gradient border !-->
+                <div class = "wrapper text-light px-4 pt-2"> <!-- box for inner purple box !-->
+                    <h5 class = "title p-3 border-bottom mb-3">APY Compound Calculator</h5>
+                    <div id = "amount" class = "d-flex justify-content-between p-2"> <!-- box for amount !-->
+                        <label class = "align-self-end" for="amount">Amount</label>
+                        <div class = "input_box">
+                            <input class="form-control shadow-none" type="text" name="amount">
+                        </div>
+                    </div>
+                    <div id = "rate" class = "d-flex justify-content-between p-2"> <!-- box for rate !-->
+                        <label class = "align-self-end" for="rate">Rate (%)</label>
+                        <div class = "input_box">
+                            <input class="form-control shadow-none" type="text" name="rate">
+                        </div>
+                    </div>
+                    <div id = "time" class = "d-flex justify-content-between p-2"> <!-- box for time !-->
+                        <label class = "align-self-end" for="time">Time (Years)</label>
+                        <div class = "input_box">
+                            <input class="form-control shadow-none" type="text" name="time">
+                        </div>
+                    </div>
+                    <div class = "text-center p-4"> <!-- calculate button !-->
+                        <button class = "btn text-light font-weight-bold p-2" style = "border: none; background: none; outline: none;" onclick='calculate()'>Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function calculate() {
+
+
+        var x = document.getElementById("forSaleCalculator");
+        var floor = document.getElementById("floorCalculator");
+        var floorColor = document.getElementById("floorColor")
+        var forSaleColor = document.getElementById("forSaleColor")
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            floor.style.display = "none";
+            floorColor.style.color = "white";
+            forSaleColor.style.color = "#02FFB3";
+        }
+    }
+
+</script>
+
+</html>
