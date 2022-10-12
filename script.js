@@ -8,29 +8,16 @@ function calculate(element) {
     }
 
     // input values
-    var amount = document.getElementById("amount").value;
-    var rate = document.getElementById("rate").value / 100;
-    var time = document.getElementById("time").value;
-
-    // algorithm variables
-    var totalDays = parseInt(time) * 365;
+    var amount = parseFloat(document.getElementById("amount").value);
+    var rate = parseFloat(document.getElementById("rate").value) / 100.0;
+    var time = parseFloat(document.getElementById("time").value);
 
     // calculation algorithm
+    // ((P*(1+i)^n) - P)
     if (time > 1) {
-        for (var i = 1; i <= totalDays; i++) {
-            var yearly = amount * rate;
-            var daily = yearly / 365;
-            amount = daily + parseInt(amount);
-            console.log(amount)
-        }
-    document.getElementById('totalValue').innerHTML = amount;
+        var apy = (amount * (1+rate)**time) - amount
+        var totalAmount = apy + amount
     }
-    else {
-        for (var i = 1; i <= 365; i++) {
-            var yearly = amount * rate;
-            var daily = yearly / 365;
-            amount = daily + parseInt(amount);
-        }
-    }
-    document.getElementById('totalValue').innerHTML = amount;
+    document.getElementById('interest_earned').innerHTML = apy;
+    document.getElementById('totalValue').innerHTML = totalAmount;
 }
