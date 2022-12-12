@@ -24,13 +24,17 @@ body {
 
 .input_box {
     box-shadow: 1px 1px 3px black !important;
-    width: 70px;
+    width: 115px;
 }
 
 .btn {
     border-radius: 40px !important;
-    box-shadow: 2px 3px 5px black !important;
+    box-shadow: 1px 1px 4px black !important;
     background-image: linear-gradient(to right, #A24CE5 10%, rgba(0, 255, 178, 0.6) 90%) !important;
     width: 120px;
 }
 
+.btn:hover {
+    background-image: linear-gradient(to right, rgba(0, 255, 178, 0.6) 10%, #A24CE5 90%) !important;
+    opacity: 0.75;
+    }

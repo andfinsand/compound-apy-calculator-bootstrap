@@ -13,9 +13,16 @@ function calculate(element) {
     var time = parseFloat(document.getElementById("time").value);
 
     // calculation algorithm
-    // ((P*(1+i)^n) - P)
+
+    // empty input alert
+    if (document.getElementById("amount").value == "" || document.getElementById("rate").value == "" || document.getElementById("time").value == "") {
+        document.getElementById('interest_earned').innerHTML = "Missing Input";
+        document.getElementById('totalValue').innerHTML = "Missing Input";
+    }
+
+    // algorithm
     if (time > 1) {
-        var interest = (amount * (1+rate)**time) - amount
+        var interest = (amount * (1+rate)**time) - amount // ((P*(1+i)^n) - P)
         var totalAmount = interest + amount
     }
     let interestFixed = interest.toFixed(2)
