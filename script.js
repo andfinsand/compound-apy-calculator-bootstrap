@@ -27,6 +27,6 @@ function calculate(element) {
     }
     let interestFixed = interest.toFixed(2)
     let totalAmountFixed = totalAmount.toFixed(2)
-    document.getElementById('interest_earned').innerHTML = interestFixed;
-    document.getElementById('totalValue').innerHTML = totalAmountFixed;
+    document.getElementById('interest_earned').innerHTML = "$" + interestFixed;
+    document.getElementById('totalValue').innerHTML = "$" + totalAmountFixed;
 }

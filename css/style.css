@@ -5,36 +5,78 @@
 }
 
 body {
-    background-color: #0F001B !important;
+    background-attachment: fixed;
+    background-image: linear-gradient(#283048, #859398);
 }
 
-.wrapper {
-    background-image: linear-gradient(150deg, #37366B 20%, #3B265C 90%);
-    border-radius: 25px;
+.container {
+    height: 100vh;
+}
+
+.main-content {
+    background-image: linear-gradient(to bottom right,  rgba(0, 4, 17, 0.15), rgba(61, 71, 90, 0.15));
+    border-radius: 10px;
     width: 340px;
+    padding-left: 30px;
+    padding-right: 30px;
     /* height: 265px; */
 }
 
 .highlight_box {
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 1px;
-    background-image: linear-gradient(to bottom, #02FFB3 1%, #B95FFF 80%);
-    box-shadow: 2px 3px 7px black;
+    background-image: linear-gradient(to bottom right, rgba(130, 144, 149, 0.2), rgba(45, 53, 76, 0.2));
+    box-shadow: 4px 5px 10px rgba(42, 50, 73, 0.6), -3px -4px 10px -3px rgba(255, 255, 255, 0.25);
+}
+
+.title {
+    text-shadow: 1px 3px 3px #293149;
+    opacity: 0.7;
 }
 
 .input_box {
-    box-shadow: 1px 1px 3px black !important;
-    width: 115px;
+    width: 100px;
+}
+
+.form-control {
+    border-radius: 9px !important;
+    border: none !important;
+    background-color: #757C89 !important;
+    color: white !important;
+    height: 35px !important;
 }
 
 .btn {
+    text-align: center;
+    transition: 0.5s !important;
+    background-size: 200% auto;
     border-radius: 40px !important;
-    box-shadow: 1px 1px 4px black !important;
-    background-image: linear-gradient(to right, #A24CE5 10%, rgba(0, 255, 178, 0.6) 90%) !important;
-    width: 120px;
+    width: 100%;
+    box-shadow: none !important;
 }
 
 .btn:hover {
-    background-image: linear-gradient(to right, rgba(0, 255, 178, 0.6) 10%, #A24CE5 90%) !important;
-    opacity: 0.75;
+    background-position: right center;
     }
+
+.btn-calculate {
+    background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%);
+}
+
+.btn-gradient {
+    border-radius: 40px !important;
+    padding: 3px;
+    background-image: linear-gradient(to bottom, rgba(73, 105, 178), rgba(27, 44, 79));
+    box-shadow: 0px 12px 20px -10px #1B2C4E !important;
+    width: 140px;
+    height: 40px;
+}
+
+.calculate-text {
+    width: 100%;
+    align-self: center;
+}
+
+.results {
+    color: #283E6C;
+}
