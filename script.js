@@ -15,9 +15,11 @@ function calculate(element) {
     // calculation algorithm
     // ((P*(1+i)^n) - P)
     if (time > 1) {
-        var apy = (amount * (1+rate)**time) - amount
-        var totalAmount = apy + amount
+        var interest = (amount * (1+rate)**time) - amount
+        var totalAmount = interest + amount
     }
-    document.getElementById('interest_earned').innerHTML = apy;
-    document.getElementById('totalValue').innerHTML = totalAmount;
+    let interestFixed = interest.toFixed(2)
+    let totalAmountFixed = totalAmount.toFixed(2)
+    document.getElementById('interest_earned').innerHTML = interestFixed;
+    document.getElementById('totalValue').innerHTML = totalAmountFixed;
 }
