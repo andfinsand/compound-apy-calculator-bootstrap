@@ -1,6 +1,6 @@
 # compound-apy-calculator-bootstrap
 
-Calculate compound interest per year.
+Calculate compounding interest per year.
 
 Javascript | HTML | BootstrapCSS
 
