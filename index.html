@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yearly APY Compound Calculator</title>
-    <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class = "container d-flex justify-content-center pb-5">
         <div class = "align-self-center text-center pb-5">
             <div class = "highlight_box"> <!-- box for linear gradient border !-->
                 <div class = "main-content text-light pt-2 pb-4"> <!-- box for main content !-->
-                    <h5 class = "title p-3 mb-3">APY Compound Calculator</h5>
+                    <p class = "title font-mavenpro px-0 py-3 mb-3">APY COMPOUND CALCULATOR</p>
 
                     <!-- input values  -->
 
@@ -51,12 +61,12 @@
                     <!-- extend div box after calculating !-->
 
                     <div id="net-box" class="net-box-dropdown">
-                        <div class = "results d-flex justify-content-between mx-2">
-                            <div class = "interest"> <!-- box for interest !-->
+                        <div class = "results row flex-nowrap">
+                            <div class = "interest col-sm"> <!-- box for interest !-->
                                 <p class="font-weight-bold">Interest</p>
                                 <h5 id="interest_earned" class="text-light"></h5>
                             </div>
-                            <div class = "total_value"> <!-- box for total value !-->
+                            <div class = "total_value col-sm"> <!-- box for total value !-->
                                 <p class="font-weight-bold">Total Value</p>
                                 <h5 id="totalValue" class="text-light"></h5>
                             </div>

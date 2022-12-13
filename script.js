@@ -20,7 +20,9 @@ function calculate(element) {
 
     // empty input alert
     if (document.getElementById("amount").value == "" || document.getElementById("rate").value == "" || document.getElementById("time").value == "") {
+        document.getElementById('interest_earned').style.fontSize = "medium";
         document.getElementById('interest_earned').innerHTML = "Missing Input";
+        document.getElementById('totalValue').style.fontSize = "medium";
         document.getElementById('totalValue').innerHTML = "Missing Input";
     }
 
