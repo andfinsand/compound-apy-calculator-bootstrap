@@ -80,3 +80,16 @@ body {
 .results {
     color: #283E6C;
 }
+
+.net-box-dropdown {
+    visibility: hidden;
+    height: 0px;
+    opacity: 0;
+    transition: height .3s, visibility 1s, opacity 1s;
+}
+
+.net-box-dropdown.expanded {
+    visibility: visible;
+    height: 70px;
+    opacity: 1;
+}

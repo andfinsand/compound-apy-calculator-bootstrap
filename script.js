@@ -1,10 +1,14 @@
+var divVisibility = false;
+
 function calculate(element) {
 
-    var x = document.getElementById("net_box");
+    // toggle net-box dropdown visibility
+    var dropdown = document.getElementById("net-box");
 
-    // display div box
-    if (x.style.display === "none") {
-        x.style.display = "block";
+    if (!divVisibility) {
+        dropdown.classList.toggle("expanded");
+        divVisibility = true;
+        dropdown.style.visibility = "visible";
     }
 
     // input values
