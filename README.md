@@ -1,4 +1,4 @@
-# compound-apy-calculator-bootstrap
+# Compound APY Calculator
 
 Calculate compounding interest per year.
 
