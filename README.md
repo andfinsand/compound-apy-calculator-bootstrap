@@ -1,4 +1,4 @@
-# Compound APY Calculator
+# APY Compound Calculator
 
 Calculate compounding interest per year.
 
